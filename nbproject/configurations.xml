@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <logicalFolder name="AIX"
+                       displayName="AIX"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules.20030922</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules.20031023</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules.20070213</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules.maia</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules.naos-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules_beta.20050321</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Makefile_AIX</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="AIX_multi"
+                       displayName="AIX_multi"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules.20030922</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules.20031023</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules.20070213</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules.maia</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules.naos-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules_beta.20050321</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Makefile_AIX</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/AIX_multi/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="code_templates"
+                       displayName="code_templates"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/code_templates/template_fn.ftn90</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/code_templates/template_mod.ftn90</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/code_templates/template_modfn.ftn90</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/code_templates/template_modsub.ftn90</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/code_templates/template_sub.ftn90</itemPath>
+        </logicalFolder>
+        <logicalFolder name="CUSTOM"
+                       displayName="CUSTOM"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/CUSTOM/Compiler_rules</itemPath>
+        </logicalFolder>
+        <logicalFolder name="CVS_whereis"
+                       displayName="CVS_whereis"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/CVS_whereis/rmnlib</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Darwin"
+                       displayName="Darwin"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Darwin/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Darwin/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Darwin/Makefile_Darwin</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Darwin/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Darwin/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="HP-UX"
+                       displayName="HP-UX"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP-UX/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP-UX/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP-UX/Makefile_HP-UX</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP-UX/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="HP90"
+                       displayName="HP90"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP90/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP90/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP90/Makefile_HP-UX</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP90/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/HP90/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="IRIX64"
+                       displayName="IRIX64"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/Compiler_rules_beta-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/Makefile_IRIX64</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/rpn_macros_arch.h</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/IRIX64/rpn_macros_arch.h-</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux"
+                       displayName="Linux"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Compiler_rules_beta-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Compiler_rules_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Makefile_Linux_pgi611</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_g95"
+                       displayName="Linux_g95"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_g95/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_g95/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_gfortran"
+                       displayName="Linux_gfortran"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_gfortran/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_gfortran/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_i686"
+                       displayName="Linux_i686"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Compiler_rules_beta-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Compiler_rules_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Makefile_Linux_pgi611</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_i686_pgi611"
+                       displayName="Linux_i686_pgi611"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Compiler_rules_beta-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Compiler_rules_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Makefile_Linux_pgi611</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_i686_pgi611/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_ia64"
+                       displayName="Linux_ia64"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ia64/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ia64/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ia64/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_ia64_ifort9"
+                       displayName="Linux_ia64_ifort9"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ia64_ifort9/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ia64_ifort9/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ia64_ifort9/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_ifort9"
+                       displayName="Linux_ifort9"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ifort9/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_ifort9/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_pgi611"
+                       displayName="Linux_pgi611"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Compiler_rules_beta-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Compiler_rules_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Makefile_Linux_pgi611</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi611/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_pgi7xx"
+                       displayName="Linux_pgi7xx"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi7xx/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_pgi7xx/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_sun12"
+                       displayName="Linux_sun12"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_sun12/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_sun12/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_sun12/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_sun12/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_x86"
+                       displayName="Linux_x86"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Compiler_rules_beta-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Compiler_rules_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Makefile_Linux_pgi611</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_x86-64"
+                       displayName="Linux_x86-64"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_x86-64_pgi611"
+                       displayName="Linux_x86-64_pgi611"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi611/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi611/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi611/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi611/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_x86-64_pgi7xx"
+                       displayName="Linux_x86-64_pgi7xx"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi7xx/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi7xx/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_x86-64_pgi904"
+                       displayName="Linux_x86-64_pgi904"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi904/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_pgi904/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_x86-64_sun12"
+                       displayName="Linux_x86-64_sun12"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_sun12/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_sun12/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86-64_sun12/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Linux_x86_pgi611"
+                       displayName="Linux_x86_pgi611"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Compiler_rules-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Compiler_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Compiler_rules_beta-</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Compiler_rules_beta_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Compiler_rules_old</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Makefile_Linux</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Makefile_Linux_pgi611</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Linux_x86_pgi611/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="make_depend"
+                       displayName="make_depend"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_depend/Makefile.proto_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_depend/depend_rules_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_depend/r.depend_co_001</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_depend/r.depend_exec_001</itemPath>
+        </logicalFolder>
+        <logicalFolder name="make_exp"
+                       displayName="make_exp"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp/Makefile.vanilla</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp/docdk1</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp/docdk2</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp/mktmplcdk</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp/targ1</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp/targ2</itemPath>
+        </logicalFolder>
+        <logicalFolder name="make_exp_beta"
+                       displayName="make_exp_beta"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_beta/docdk1</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_beta/docdk2</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_beta/mktmplcdk</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_beta/targ1</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_beta/targ2</itemPath>
+        </logicalFolder>
+        <logicalFolder name="make_exp_old"
+                       displayName="make_exp_old"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_old/docdk1</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_old/docdk2</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_old/mktmplcdk</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_old/targ1</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/make_exp_old/targ2</itemPath>
+        </logicalFolder>
+        <logicalFolder name="NAGf95"
+                       displayName="NAGf95"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/NAGf95/Compiler_rules</itemPath>
+        </logicalFolder>
+        <logicalFolder name="postscript"
+                       displayName="postscript"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/postscript/upprtray.ps</itemPath>
+        </logicalFolder>
+        <logicalFolder name="RCS"
+                       displayName="RCS"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+        </logicalFolder>
+        <logicalFolder name="script_includes"
+                       displayName="script_includes"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/script_includes/pstoppm.ps</itemPath>
+        </logicalFolder>
+        <logicalFolder name="SunOS"
+                       displayName="SunOS"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/SunOS/Compiler_rules</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/SunOS/Compiler_rules_beta</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/SunOS/Makefile_SunOS</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/SunOS/Makefile_addons</itemPath>
+          <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/SunOS/rpn_macros_arch.h</itemPath>
+        </logicalFolder>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/Imake_adds.rules</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_COMM_V3_f90</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_COMM_f90</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_COMM_f90.0</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_COMM_f90.orig</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_LGPL</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_RMNLIB_c</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_RMNLIB_f90</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/LICENSE_RMNLIB_ftn</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/VertInterp_f90.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/ViConstants_f90.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/ViTypes2_f90.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/ViTypes_f90.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/WhiteBoard.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/WhiteBoard.h.old</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/WhiteBoard.hf</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/a000000.cdk</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/arc4.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/cgossip.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/clib_interface.cdk</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/cvs.err</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/expat.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/f_hpm.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/f_hpm.h.001</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/f_hpm.h_old</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/fftw_f.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/fftw_f77.i</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/fgossip.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/fnom.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/ftn2c_helper.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/ftnmacros.hf</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/gmm.cdk</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/gmm.fh</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/gmm.hf</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/gossip.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/libhpm.H</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/libhpm.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/liste.cvs</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/llapi.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/machin.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/makefile_suffix_rules.inc</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/md5.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/model_macros_001.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/model_macros_002.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/model_macros_f.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/model_macros_f_000.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/model_macros_f_ftnpp.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/model_macros_f_gpp.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/old_fnom.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/old_ftnmacros.hf</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/old_proto.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/old_rmnlib.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/pil_int.cdk</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/pilot.cdk</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/prof_f.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/prof_var_f.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/proto.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rmnlib.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rmnlib.hf</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rmnlib_LGPL_c</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rmnlib_LGPL_f</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rpn-comm-license.html</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rpnmacros.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rpnmacros_doc.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rpnmacros_f.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rpnmacros_ftn.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/rpnmacros_global.h</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/whiteboard_interface_omp.cdk</itemPath>
+        <itemPath>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include/whiteboard_interface_st.cdk</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>rmn_wrapper.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>pgCC</commandlineTool>
+        </cTool>
+        <ccTool>
+          <commandlineTool>pgCC</commandlineTool>
+          <incDir>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC/wrap_std</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC/stl</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC/wrap_std</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC/wrap_std/h</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC/using</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC/config</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/CC/edg</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/bits</pElem>
+            <pElem>/usr/local/pgi_serv_904/linux86-64/9.0-4/include/sys</pElem>
+            <pElem>/home/armnlib/ssm/infrastructure_1.0_linux24-x86-64/share/armnlib/include</pElem>
+            <pElem>/home/armnlib/ssm/all/include/Linux_x86-64_pgi904</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>pgCC</commandlineTool>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
