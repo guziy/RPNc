@@ -2,6 +2,9 @@
 
 #include <iostream>
 
+#include "AIX_multi/rpn_macros_arch.h"
+#include <rmnlib.h>
+
 using namespace std;
 
  //associate file_name with the file number iun
@@ -100,7 +103,13 @@ extern "C" int c_fstluk(float *field, int handle, int *ni, int *nj, int *nk);
  *                                                                           *
  *****************************************************************************/
 
-int c_fstsui(int iun, int *ni, int *nj, int *nk);
+extern "C" int c_fstsui(int iun, int *ni, int *nj, int *nk);
+
+extern "C" int fstsui_wrapper(int iun, int *ni, int *nj, int *nk){
+   return c_fstsui(iun, ni, nj, nk);
+}
+
+
 
 
 /*****************************************************************************
@@ -311,4 +320,121 @@ extern "C" char* get_message(){
 
 extern "C" int get_number(){
     return 5;
+}
+
+
+/*****************************************************************************
+ *                          C _ I P 2 _ A L L                                *
+ *                                                                           *
+ *Object                                                                     *
+ *   Generates all possible coded ip2 values for a given level               *
+ *                                                                           *
+ *Arguments                                                                  *
+ *                                                                           *
+ *  IN  level          ip2 level (float value)                               *
+ *  IN  kind           level kind as defined in convip                       *
+ *                                                                           *
+ *****************************************************************************/
+
+extern "C" int c_ip2_all(float level, int kind);
+
+
+extern "C" int ip2_all_wrapper(float level, int kind){
+    return c_ip2_all(level, kind);
+}
+
+
+/*****************************************************************************
+ *                          C _ I P 3 _ A L L                                *
+ *                                                                           *
+ *Object                                                                     *
+ *   Generates all possible coded ip3 values for a given ip3                 *
+ *                                                                           *
+ *Arguments                                                                  *
+ *                                                                           *
+ *  IN  level          ip3  (float value)                                    *
+ *  IN  kind           level kind as defined in convip                       *
+ *                                                                           *
+ *****************************************************************************/
+
+extern "C" int c_ip3_all(float level, int kind);
+
+extern "C" int ip3_all_wrapper(float level, int kind){
+    return c_ip3_all(level, kind);
+}
+
+
+
+/**********************************************************************
+*     Codage/Decodage P de/a IP pour IP1, IP2, IP3
+*     necessaire avant de lire/ecrire un enregistrement
+*     sur un fichier standard.
+*
+*     Etendu des valeurs encodes: 10e-5 -> 10e10
+*     1024x1024-1 = 1048575    1048001 -> 1048575 non utilise
+*
+*     Auteurs: N. Ek et B. Dugas - Mars 1996
+*     Revision 001  M. Lepine - juin 1997 convpr devient convip
+*     Revision 002  M. Valin  - mai  1998 fichiers std 98
+*     Revision 003  B. Dugas  - juillet 2000 code arbitraire
+*     Revision 004  M. Lepine - fevrier 2002 kind = 4, hauteur au sol +
+*                               possibilite de forcer newstyle ou non avec mode=2 et mode=3
+*     Revision 005  M. Lepine - avril 2002 kind = 5 (hybride), kind = 21 (GalChen)
+*                               valeur min, max, zero et facteur multiplicatif
+*     Revision 006  M. Lepine - Juin 2002 kind = 6 (Theta)
+*     Revision 007  M. Lepine - Oct 2003 kind = 10 (temps en heure)
+*     Revision 008  M. Lepine - Dec 2005 kind = 17 (indice de matrice de niveaux)
+*     Revision 009  M. Valin  - Mars 2008 kind = 21 (metres pression remplacant GalChen)
+*                               introduction de zero_val2 pour la conversion ip->p
+*
+*     Input:    MODE = -1, de IP -->  P
+*               MODE =  0, forcer conversion pour ip a 31 bits
+*                          (default = ip a 15 bits)
+*                          (appel d'initialisation)
+*               MODE = +1, de P  --> IP
+*               MODE = +2, de P  --> IP en mode NEWSTYLE force a true
+*               MODE = +3, de P  --> IP en mode NEWSTYLE force a false
+*               FLAG = .true. , ecriture de P avec format dans string
+*
+*     Input/
+*     Ouput:    IP  =   Valeur codee
+*               P    =   Valeur reelle
+*               KIND =0, p est en hauteur (m) par rapport au niveau de la mer (-20,000 -> 100,000)
+*               KIND =1, p est en sigma                                       (0.0 -> 1.0)
+*               KIND =2, p est en pression (mb)                               (0 -> 1100)
+*               KIND =3, p est un code arbitraire                             (-4.8e8 -> 10e10)
+*               KIND =4, p est en hauteur (M) par rapport au niveau du sol    (-20,000 -> 100,000)
+*               KIND =5, p est en coordonnee hybride                          (0.0 -> 1.0)
+*               KIND =6, p est en coordonnee theta                            (1 -> 200,000)
+*               KIND =10, p represente le temps en heure                      (0.0 -> 200,000.0)
+*               KIND =15, reserve (entiers)
+*               KIND =17, p represente l'indice x de la matrice de conversion (1.0 -> 1.0e10)
+*               KIND =21, p est en metres-pression  (partage avec kind=5 a cause du range exclusif)
+*                                                                             (0 -> 1,000,000) fact=1e4
+*               STRING = valeur de P formattee
+**********************************************************************/
+
+extern "C" void f77name(convip)( int *ip, float *p, int *kind, int *mode, char* string, int* flag );
+
+extern "C" void convip_wrapper(int *ip, float *p, int *kind, int *mode, char* str, int* flag){
+    convip_(ip, p, kind, mode, str, flag);
+}
+
+
+/*****************************************************************************
+ *                          C _ F S T N B R                                  *
+ *                                                                           *
+ *Object                                                                     *
+ *   Returns the number of records of the file associated with unit number.  *
+ *                                                                           *
+ *Arguments                                                                  *
+ *                                                                           *
+ *  IN  iun     unit number associated to the file                           *
+ *                                                                           *
+ *****************************************************************************/
+
+extern "C" int c_fstnbr(int iun);
+
+extern "C" int fstnbr_wrapper(int iun){
+    return c_fstnbr(iun);
 }
