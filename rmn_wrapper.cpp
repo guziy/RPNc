@@ -438,3 +438,98 @@ extern "C" int c_fstnbr(int iun);
 extern "C" int fstnbr_wrapper(int iun){
     return c_fstnbr(iun);
 }
+
+
+/*splitpoint c_fstecr */
+/*****************************************************************************
+ *                           C _ F S T E C R                                 *
+ *                                                                           *
+ *Object                                                                     *
+ *   Writes record to file.                                                  *
+ *                                                                           *
+ *Arguments                                                                  *
+ *                                                                           *
+ *  IN  field   field to write to the file                                   *
+ *  IN  work    work field (kept for backward compatibility)                 *
+ *  IN  npak    number of bits kept for the elements of the field (-npak)    *
+ *  IN  iun     unit number associated to the file                           *
+ *  IN  date    date time stamp                                              *
+ *  IN  deet    length of a time step in seconds                             *
+ *  IN  npas    time step number                                             *
+ *  IN  ni      first dimension of the data field                            *
+ *  IN  nj      second dimension of the data field                           *
+ *  IN  nk      third dimension of the data field                            *
+ *  IN  ip1     vertical level                                               *
+ *  IN  ip2     forecast hour                                                *
+ *  IN  ip3     user defined identifier                                      *
+ *  IN  typvar  type of field (forecast, analysis, climatology)              *
+ *  IN  nomvar  variable name                                                *
+ *  IN  etiket  label                                                        *
+ *  IN  grtyp   type of geographical projection                              *
+ *  IN  ig1     first grid descriptor                                        *
+ *  IN  ig2     second grid descriptor                                       *
+ *  IN  ig3     third grid descriptor                                        *
+ *  IN  ig4     fourth grid descriptor                                       *
+ *  IN  datyp   data type of the elements                                    *
+ *          0: binary, transparent                                           *
+ *          1: floating point                                                *
+ *          2: unsigned integer                                              *
+ *          3: character (R4A in an integer)                                 *
+ *          4: signed integer                                                *
+ *          5: IEEE floating point                                           *
+ *          6: floating point (16 bit, made for compressor)                  *
+ *          7: character string                                              *
+ *          8: complex IEEE                                                  *
+ *        130: compressed short integer                                      *
+ *        133: compressed IEEE                                               *
+ *        134: compressed floating point                                     *
+ *  IN  rewrit  rewrite flag (true=rewrite existing record, false=append)    *
+ *                                                                           *
+ *****************************************************************************/
+extern "C" int c_fstecr(float *field, void * work, int npak,
+                        int iun, int date,
+                        int deet, int npas,
+                        int ni, int nj, int nk,
+                        int ip1, int ip2, int ip3,
+                        char *in_typvar, char *in_nomvar, char *in_etiket,
+                        char *in_grtyp, int ig1, int ig2,
+                        int ig3, int ig4,
+                        int in_datyp, int rewrit);
+
+
+/**
+ *
+ * @param field
+ * @param bits_per_value
+ * @param iun
+ * @param date
+ * @param deet
+ * @param npas
+ * @param ni
+ * @param nj
+ * @param nk
+ * @param ip1
+ * @param ip2
+ * @param ip3
+ * @param in_typvar
+ * @param in_nomvar
+ * @param in_etiket
+ * @param in_grtyp
+ * @param datyp
+ * @param rewrite if equal 1 then rewrite existing record
+ * @return
+ */
+extern "C" int fstecr_wrapper(float* field, int bits_per_value, int iun,
+                              int date, int deet, int npas,
+                              int ni, int nj, int nk,
+                              int ip1, int ip2, int ip3,
+                              char *in_typvar, char *in_nomvar,
+                              char *in_etiket, char *in_grtyp,
+                              int ig1, int ig2, int ig3, int ig4,
+                              int datyp, int rewrite){
+
+    return c_fstecr(field, field, bits_per_value, iun, date, deet, npas,
+                    ni, nj, nk, ip1, ip2, ip3, in_typvar, in_nomvar, in_etiket,
+                    in_grtyp, ig1, ig2, ig3, ig4, datyp, rewrite );
+
+}
