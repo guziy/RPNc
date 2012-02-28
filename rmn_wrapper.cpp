@@ -417,7 +417,7 @@ extern "C" int ip3_all_wrapper(float level, int kind){
 extern "C" void f77name(convip)( int *ip, float *p, int *kind, int *mode, char* string, int* flag );
 
 extern "C" void convip_wrapper(int *ip, float *p, int *kind, int *mode, char* str, int* flag){
-    convip_(ip, p, kind, mode, str, flag);
+    f77name(convip)(ip, p, kind, mode, str, flag);
 }
 
 
@@ -532,4 +532,63 @@ extern "C" int fstecr_wrapper(float* field, int bits_per_value, int iun,
                     ni, nj, nk, ip1, ip2, ip3, in_typvar, in_nomvar, in_etiket,
                     in_grtyp, ig1, ig2, ig3, ig4, datyp, rewrite );
 
+}
+
+
+
+/*
+***S/P CXGAIG - PASSE DES PARAMETRES (REELS) DESCRIPTEURS DE GRILLE
+              AUX PARAMETRES ENTIERS.
+
+      SUBROUTINE CXGAIG(CGTYP,IG1,IG2,IG3,IG4,XG1,XG2,XG3,XG4)
+      CHARACTER * 1 CGTYP
+ *
+ * folder base_010
+ */
+
+extern "C" void f77name(cxgaig)(char* grtype, int* ig1, int* ig2, int* ig3, int* ig4,
+                                  float* xg1, float* xg2, float* xg3, float* xg4);
+
+extern "C" void cxg_to_ig_wrapper(char* grtype, int* ig1, int* ig2, int* ig3, int* ig4,
+                                  float* xg1, float* xg2, float* xg3, float* xg4){
+
+    f77name(cxgaig)(grtype, ig1, ig2, ig3, ig4, xg1, xg2, xg3, xg4);
+}
+
+
+
+
+/* * Copyright (C) 1975-2001  Division de Recherche en Prevision Numerique
+* *                          Environnement Canada
+* *
+* * This library is free software; you can redistribute it and/or
+* * modify it under the terms of the GNU Lesser General Public
+* * License as published by the Free Software Foundation,
+* * version 2.1 of the License.
+* *
+* * This library is distributed in the hope that it will be useful,
+* * but WITHOUT ANY WARRANTY; without even the implied warranty of
+* * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* * Lesser General Public License for more details.
+* *
+* * You should have received a copy of the GNU Lesser General Public
+* * License along with this library; if not, write to the
+* * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+* * Boston, MA 02111-1307, USA.
+* *
+***S/P CIGAXG - PASSE DES PARAMETRES (ENTIERS) DESCRIPTEURS DE GRILLE
+*              AUX PARAMETRES REELS.
+
+
+      SUBROUTINE CIGAXG(CGTYP,XG1,XG2,XG3,XG4,IG1,IG2,IG3,IG4)
+      CHARACTER * 1 CGTYP
+ * */
+
+extern "C" void f77name(cigaxg)(char* grtype, int* xg1, int* xg2, int* xg3, int* xg4,
+                                  float* ig1, float* ig2, float* ig3, float* ig4);
+
+extern "C" void cig_to_xg_wrapper(char* grtype, int* xg1, int* xg2, int* xg3, int* xg4,
+                                  float* ig1, float* ig2, float* ig3, float* ig4){
+
+    f77name(cigaxg)(grtype, xg1, xg2, xg3, xg4, ig1, ig2, ig3, ig4);
 }
