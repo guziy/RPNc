@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "AIX_multi/rpn_macros_arch.h"
+#include "rpn_macros_arch.h"
 #include <rmnlib.h>
 
 using namespace std;

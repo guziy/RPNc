@@ -6,10 +6,10 @@ CXX = pgCC
 LIB = -L$(ARMNLIB)/lib/Linux_x86-64_pgi904 -L$(ARMNLIB)/lib
 INCLUDE = -I$(BASE_INC_PATH) -I$(BASE_INC_PATH)/Linux_x86-64_pgi904
 
-
+#See why .f is not in sources
 
 SOURCES = $(*.cpp)
-OBJ = $(patsubst %.cpp, %.o, $(notdir $(CPP_FILES)))
+OBJ = $(patsubst %.cpp, %.o, $(notdir $(SOURCES)))
 
 
 all : $(OBJ)
