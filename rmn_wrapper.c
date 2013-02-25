@@ -595,9 +595,9 @@ extern  void cig_to_xg_wrapper(char* grtype, int* xg1, int* xg2, int* xg3, int* 
 
 
 
-extern "C" int f77name(newdate)(int* dat1, int* dat2, int* dat3, int* mode);
+extern int f77name(newdate)(int* dat1, int* dat2, int* dat3, int* mode);
 
-extern "C" int newdate_wrapper(int* dat1, int* dat2, int* dat3, int* mode){
+extern int newdate_wrapper(int* dat1, int* dat2, int* dat3, int* mode){
     return f77name(newdate)(dat1, dat2, dat3, mode);
 }
 
