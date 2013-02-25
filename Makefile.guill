@@ -2,23 +2,28 @@
 
 
 FC = s.f90
-CXX = s.cc
+CC = s.cc
 
 
 
 SOURCES_C = $(wildcard *.c) 
 SOURCES_F = $(wildcard *.f)
-OBJ = $(patsubst %.c, %.o, $(notdir $(SOURCES_C)))
-      #$(patsubst %.f, %.o, $(notdir $(SOURCES_F))) 
+OBJ = $(patsubst %.c, %.o, $(notdir $(SOURCES_C))) \
+      $(patsubst %.f, %.o, $(notdir $(SOURCES_F))) 
 	
 
 
 all : $(OBJ)
 	@echo $(OBJ)
-	$(FC) -shared $(OBJ) -o rmnlib.so -lrmnshared_013  #:-lrmn_013 -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
+	USE_FPIC=yes $(FC) -shared $(OBJ) -o rmnlib.so -lrmnshared_013  #:-lrmn_013 -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
 
 %.o : %.cpp
-	$(CXX) -c -g -fPIC $< -o $@ $(INCLUDE)
+	USE_FPIC=yes $(CC) -c -g -fPIC $< -o $@
+
+%.o : %.f
+	USE_FPIC=yes $(FC) -c -g -fPIC $< -o $@
+
+
 
 clean:
 	rm -f *.o
