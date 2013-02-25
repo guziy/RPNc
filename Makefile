@@ -11,9 +11,16 @@ all : *.o
 	$(FC) -c -fPIC *.f
 	$(CXX) -shared *.o -o rmnlib.so $(LIB) -lrmn -lstd -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
 
-*.o : *.cpp
-	$(CXX) -c -g -fPIC *.cpp $(INCLUDE)
+SOURCES = $(*.cpp)
+OBJ = $(patsubst %.cpp, %.o, $(notdir $(SOURCES)))
 
-clean: *.o
+
+all : $(OBJ)
+	$(CXX) -shared $(OBJ) -o rmnlib.so $(LIB) -lrmn -lstd -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
+
+%.o : %.cpp
+	$(CXX) -c -g -fPIC $< -o $@ $(INCLUDE)
+
+clean:
 	rm -f *.o
 	rm -f *.so
