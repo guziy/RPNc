@@ -592,3 +592,37 @@ extern "C" void cig_to_xg_wrapper(char* grtype, int* xg1, int* xg2, int* xg3, in
 
     f77name(cigaxg)(grtype, xg1, xg2, xg3, xg4, ig1, ig2, ig3, ig4);
 }
+
+
+
+extern "C" int f77name(newdate)(int* dat1, int* dat2, int* dat3, int* mode);
+
+extern "C" int newdate_wrapper(int* dat1, int* dat2, int* dat3, int* mode){
+    return f77name(newdate)(dat1, dat2, dat3, mode);
+}
+
+
+
+
+
+
+/*****************************************************************************
+ *                          C _ F S T O P C                                  *
+ *                                                                           *
+ *Object                                                                     *
+ *   Print out or set a fstd or xdf global variable option.                  *
+ *                                                                           *
+ *Arguments                                                                  *
+ *                                                                           *
+ *   IN     option   option name to be set/printed                           *
+ *   IN     value    option value                                            *
+ *   IN     getmode  logical (1: get option, 0: set option)                  *
+ *                                                                           *
+ *****************************************************************************/
+extern "C" int c_fstopc(char *option, char *value, int getmode);
+
+extern "C" int fstopc_wrapper(char *option, char *value, int getmode){
+    return c_fstopc(option, value, getmode);
+}
+
+
