@@ -1,26 +1,26 @@
 
 
-#include <iostream>
+//#include <iostream>
 
 #include "rpn_macros_arch.h"
 #include <rmnlib.h>
 
-using namespace std;
+//using namespace std;
 
  //associate file_name with the file number iun
  //I don't know what is x, but in the example it was 0
  // options = 'STD+RND' in the example
-extern "C" int c_fnom(int* iun, char* file_name, char* options, int x );
+extern  int c_fnom(int* iun, char* file_name, char* options, int x );
 
-extern "C" int c_fstouv(int iun,  char* options);
+extern  int c_fstouv(int iun,  char* options);
 
 
 //for finding 2d lat/lons
-extern "C" int  c_ezgdef_fmem(int ni, int nj, char* grtyp, char* e_l_s,
+extern  int  c_ezgdef_fmem(int ni, int nj, char* grtyp, char* e_l_s,
                                 int ig1, int ig2, int ig3, int ig4,
                                 float* lons, float* lats);
 
-extern "C" int c_gdll(int ezgdef, float* lat_2d, float* lon_2d);
+extern  int c_gdll(int ezgdef, float* lat_2d, float* lon_2d);
 
 
 /*****************************************************************************
@@ -45,11 +45,11 @@ extern "C" int c_gdll(int ezgdef, float* lat_2d, float* lon_2d);
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_fstinf(int iun, int *ni, int *nj, int *nk, int datev,char *in_etiket,
+extern  int c_fstinf(int iun, int *ni, int *nj, int *nk, int datev,char *in_etiket,
                  int ip1, int ip2, int ip3, char *in_typvar, char *in_nomvar);
 
 
-extern "C" void c_fstlir(float* buffer, int iun, int *ni, int *nj, int* nk,
+extern  void c_fstlir(float* buffer, int iun, int *ni, int *nj, int* nk,
                    int datev,  char* etiket, int ip1, int ip2, int ip3,
                     char* typvar,  char* nomvar);
 
@@ -64,8 +64,8 @@ extern "C" void c_fstlir(float* buffer, int iun, int *ni, int *nj, int* nk,
  *  IN  iun     unit number associated to the file                           *
  *                                                                           *
  *****************************************************************************/
-extern "C" int c_fstfrm(int iun);
-extern "C" int c_fclos(int iun);
+extern  int c_fstfrm(int iun);
+extern  int c_fclos(int iun);
 
 
 /*****************************************************************************
@@ -84,7 +84,7 @@ extern "C" int c_fclos(int iun);
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_fstluk(float *field, int handle, int *ni, int *nj, int *nk);
+extern  int c_fstluk(float *field, int handle, int *ni, int *nj, int *nk);
 
 
 
@@ -103,9 +103,9 @@ extern "C" int c_fstluk(float *field, int handle, int *ni, int *nj, int *nk);
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_fstsui(int iun, int *ni, int *nj, int *nk);
+extern  int c_fstsui(int iun, int *ni, int *nj, int *nk);
 
-extern "C" int fstsui_wrapper(int iun, int *ni, int *nj, int *nk){
+extern  int fstsui_wrapper(int iun, int *ni, int *nj, int *nk){
    return c_fstsui(iun, ni, nj, nk);
 }
 
@@ -152,7 +152,7 @@ extern "C" int fstsui_wrapper(int iun, int *ni, int *nj, int *nk){
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_fstprm(int handle,
+extern  int c_fstprm(int handle,
              int *dateo, int *deet, int *npas,
              int *ni, int *nj, int *nk,
              int *nbits, int *datyp, int *ip1,
@@ -177,21 +177,21 @@ extern "C" int c_fstprm(int handle,
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_ip1_all(float level, int kind);
+extern  int c_ip1_all(float level, int kind);
 
 
 ////////////////////////////////////////////////////////////////////////////////
 //wrapper functions
-extern "C" int fnom_wrapper(int* iun, char *file_name, char *options, int x){
+extern  int fnom_wrapper(int* iun, char *file_name, char *options, int x){
     return c_fnom(iun, file_name, options, x );
 }
 
-extern "C" int fstouv_wrapper(int iun,  char* options){
+extern  int fstouv_wrapper(int iun,  char* options){
     return c_fstouv( iun, options);
 }
 
 //gets a key of the field to find it in a file
-extern "C" int fstinf_wrapper(int iun, int *ni, int *nj, int *nk, int datev,char *in_etiket,
+extern  int fstinf_wrapper(int iun, int *ni, int *nj, int *nk, int datev,char *in_etiket,
                  int ip1, int ip2, int ip3, char *in_typvar, char *in_nomvar){
     int key;
     key = c_fstinf(iun, ni, nj, nk, datev, in_etiket, ip1, ip2, ip3, in_typvar, in_nomvar);
@@ -201,11 +201,11 @@ extern "C" int fstinf_wrapper(int iun, int *ni, int *nj, int *nk, int datev,char
 
 
 
-extern "C" int fstluk_wrapper(float *field, int handle, int *ni, int *nj, int *nk){
+extern  int fstluk_wrapper(float *field, int handle, int *ni, int *nj, int *nk){
     return c_fstluk(field, handle, ni, nj, nk);
 }
 
-extern "C" int fstprm_wrapper(int handle,
+extern  int fstprm_wrapper(int handle,
              int *dateo, int *deet, int *npas,
              int *ni, int *nj, int *nk,
              int *nbits, int *datyp, int *ip1,
@@ -227,7 +227,7 @@ extern "C" int fstprm_wrapper(int handle,
 }
 
 
-extern "C" void fstlir_wrapper(float* buffer, int iun, int *ni, int *nj, int* nk,
+extern  void fstlir_wrapper(float* buffer, int iun, int *ni, int *nj, int* nk,
                    int datev,  char* etiket, int ip1, int ip2, int ip3,
                     char* typvar,  char* nomvar){
     c_fstlir(buffer, iun, ni, nj, nk,
@@ -256,7 +256,7 @@ extern "C" void fstlir_wrapper(float* buffer, int iun, int *ni, int *nj, int* nk
 *               KIND =21, p est en metres-pression  (partage avec kind=5 a cause du range exclusif)
 *                                                                             (0 -> 1,000,000) fact=1e4
  */
-extern "C" int ip1_all_wrapper(float level, int kind){
+extern  int ip1_all_wrapper(float level, int kind){
     return c_ip1_all(level, kind);
 }
 
@@ -275,7 +275,7 @@ extern "C" int ip1_all_wrapper(float level, int kind){
  * @param lats
  * @return
  */
-extern "C" int  ezgdef_fmem_wrapper(int ni, int nj, char* grtyp, char* e_l_s,
+extern  int  ezgdef_fmem_wrapper(int ni, int nj, char* grtyp, char* e_l_s,
                                 int ig1, int ig2, int ig3, int ig4,
                                 float* lons, float* lats){
     return c_ezgdef_fmem(ni, nj, grtyp,e_l_s, ig1, ig2, ig3, ig4,
@@ -289,7 +289,7 @@ extern "C" int  ezgdef_fmem_wrapper(int ni, int nj, char* grtyp, char* e_l_s,
  * @param lons_2d - output
  * @return error code, if >= 0, all is ok
  */
-extern "C" int gdll_wrapper(int ezgdef, float* lats_2d, float* lons_2d){
+extern  int gdll_wrapper(int ezgdef, float* lats_2d, float* lons_2d){
     int ier = c_gdll(ezgdef, lats_2d, lons_2d);
     return ier;
 }
@@ -300,7 +300,7 @@ extern "C" int gdll_wrapper(int ezgdef, float* lats_2d, float* lons_2d){
  * @param iun
  * @return
  */
-extern "C" int fstfrm_wrapper(int iun){
+extern  int fstfrm_wrapper(int iun){
     return c_fstfrm(iun);
 }
 
@@ -309,16 +309,16 @@ extern "C" int fstfrm_wrapper(int iun){
  * @param iun
  * @return
  */
-extern "C" int fclos_wrapper(int iun){
+extern  int fclos_wrapper(int iun){
     return c_fclos(iun);
 }
 
 
-extern "C" char* get_message(){
+extern  char* get_message(){
     return "hello world";
 }
 
-extern "C" int get_number(){
+extern  int get_number(){
     return 5;
 }
 
@@ -336,10 +336,10 @@ extern "C" int get_number(){
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_ip2_all(float level, int kind);
+extern  int c_ip2_all(float level, int kind);
 
 
-extern "C" int ip2_all_wrapper(float level, int kind){
+extern  int ip2_all_wrapper(float level, int kind){
     return c_ip2_all(level, kind);
 }
 
@@ -357,9 +357,9 @@ extern "C" int ip2_all_wrapper(float level, int kind){
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_ip3_all(float level, int kind);
+extern  int c_ip3_all(float level, int kind);
 
-extern "C" int ip3_all_wrapper(float level, int kind){
+extern  int ip3_all_wrapper(float level, int kind){
     return c_ip3_all(level, kind);
 }
 
@@ -414,9 +414,9 @@ extern "C" int ip3_all_wrapper(float level, int kind){
 *               STRING = valeur de P formattee
 **********************************************************************/
 
-extern "C" void f77name(convip)( int *ip, float *p, int *kind, int *mode, char* string, int* flag );
-
-extern "C" void convip_wrapper(int *ip, float *p, int *kind, int *mode, char* str, int* flag){
+extern  void f77name(convip)( int *ip, float *p, int *kind, int *mode, char* string, int* flag );
+//ATTENTION
+extern  void convip_wrapper(int *ip, float *p, int *kind, int *mode, char* str, int* flag){
     f77name(convip)(ip, p, kind, mode, str, flag);
 }
 
@@ -433,9 +433,9 @@ extern "C" void convip_wrapper(int *ip, float *p, int *kind, int *mode, char* st
  *                                                                           *
  *****************************************************************************/
 
-extern "C" int c_fstnbr(int iun);
+extern  int c_fstnbr(int iun);
 
-extern "C" int fstnbr_wrapper(int iun){
+extern  int fstnbr_wrapper(int iun){
     return c_fstnbr(iun);
 }
 
@@ -486,7 +486,7 @@ extern "C" int fstnbr_wrapper(int iun){
  *  IN  rewrit  rewrite flag (true=rewrite existing record, false=append)    *
  *                                                                           *
  *****************************************************************************/
-extern "C" int c_fstecr(float *field, void * work, int npak,
+extern  int c_fstecr(float *field, void * work, int npak,
                         int iun, int date,
                         int deet, int npas,
                         int ni, int nj, int nk,
@@ -519,7 +519,7 @@ extern "C" int c_fstecr(float *field, void * work, int npak,
  * @param rewrite if equal 1 then rewrite existing record
  * @return
  */
-extern "C" int fstecr_wrapper(float* field, int bits_per_value, int iun,
+extern  int fstecr_wrapper(float* field, int bits_per_value, int iun,
                               int date, int deet, int npas,
                               int ni, int nj, int nk,
                               int ip1, int ip2, int ip3,
@@ -546,10 +546,10 @@ extern "C" int fstecr_wrapper(float* field, int bits_per_value, int iun,
  * folder base_010
  */
 
-extern "C" void f77name(cxgaig)(char* grtype, int* ig1, int* ig2, int* ig3, int* ig4,
+extern  void f77name(cxgaig)(char* grtype, int* ig1, int* ig2, int* ig3, int* ig4,
                                   float* xg1, float* xg2, float* xg3, float* xg4);
 
-extern "C" void cxg_to_ig_wrapper(char* grtype, int* ig1, int* ig2, int* ig3, int* ig4,
+extern  void cxg_to_ig_wrapper(char* grtype, int* ig1, int* ig2, int* ig3, int* ig4,
                                   float* xg1, float* xg2, float* xg3, float* xg4){
 
     f77name(cxgaig)(grtype, ig1, ig2, ig3, ig4, xg1, xg2, xg3, xg4);
@@ -584,10 +584,10 @@ extern "C" void cxg_to_ig_wrapper(char* grtype, int* ig1, int* ig2, int* ig3, in
       CHARACTER * 1 CGTYP
  * */
 
-extern "C" void f77name(cigaxg)(char* grtype, int* xg1, int* xg2, int* xg3, int* xg4,
+extern  void f77name(cigaxg)(char* grtype, int* xg1, int* xg2, int* xg3, int* xg4,
                                   float* ig1, float* ig2, float* ig3, float* ig4);
 
-extern "C" void cig_to_xg_wrapper(char* grtype, int* xg1, int* xg2, int* xg3, int* xg4,
+extern  void cig_to_xg_wrapper(char* grtype, int* xg1, int* xg2, int* xg3, int* xg4,
                                   float* ig1, float* ig2, float* ig3, float* ig4){
 
     f77name(cigaxg)(grtype, xg1, xg2, xg3, xg4, ig1, ig2, ig3, ig4);
