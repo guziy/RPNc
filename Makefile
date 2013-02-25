@@ -5,8 +5,10 @@ BASE_INC_PATH = $(ARMNLIB)/include
 CXX = pgCC
 LIB = -L$(ARMNLIB)/lib/Linux_x86-64_pgi904 -L$(ARMNLIB)/lib
 INCLUDE = -I$(BASE_INC_PATH) -I$(BASE_INC_PATH)/Linux_x86-64_pgi904
+FC=pgf90
 
 all : *.o
+	$(FC) -c -fPIC *.f
 	$(CXX) -shared *.o -o rmnlib.so $(LIB) -lrmn -lstd -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
 
 *.o : *.cpp
