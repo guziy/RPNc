@@ -619,10 +619,11 @@ extern int newdate_wrapper(int* dat1, int* dat2, int* dat3, int* mode){
  *   IN     getmode  logical (1: get option, 0: set option)                  *
  *                                                                           *
  *****************************************************************************/
-extern "C" int c_fstopc(char *option, char *value, int getmode);
+extern int c_fstopc(char *option, char *value, int getmode);
 
-extern "C" int fstopc_wrapper(char *option, char *value, int getmode){
+extern int fstopc_wrapper(char *option, char *value, int getmode){
     return c_fstopc(option, value, getmode);
 }
+
 
 

@@ -12,19 +12,18 @@ OBJ = $(patsubst %.c, %.o, $(notdir $(SOURCES_C))) \
       $(patsubst %.f, %.o, $(notdir $(SOURCES_F))) 
 	
 
-
 all : $(OBJ)
 	@echo $(OBJ)
-	USE_FPIC=yes $(FC) -shared $(OBJ) -o rmnlib.so -lrmnshared_013  #:-lrmn_013 -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
+	USE_PIC=yes $(FC) -shared $(OBJ) -o rmnlib.so -lrmnshared_013  #:-lrmn_013 -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
 
-%.o : %.cpp
-	USE_FPIC=yes $(CC) -c -g -fPIC $< -o $@
+%.o : %.c
+	USE_PIC=yes $(CC) -c -g  $< -o $@
 
 %.o : %.f
-	USE_FPIC=yes $(FC) -c -g -fPIC $< -o $@
+	USE_PIC=yes $(FC) -c -g $< -o $@
 
 
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ)
 	rm -f *.so
