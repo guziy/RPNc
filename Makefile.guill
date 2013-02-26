@@ -14,7 +14,9 @@ OBJ = $(patsubst %.c, %.o, $(notdir $(SOURCES_C))) \
 
 all : $(OBJ)
 	@echo $(OBJ)
-	USE_PIC=yes $(FC) -shared $(OBJ) -o rmnlib.so -lrmnshared_013  #:-lrmn_013 -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
+	USE_PIC=yes $(FC) -shared $(OBJ) -o rmnlib.so \
+                          -lrmnshared_013 \
+                          -Wl,-rpath,/sb/home/winger/ssm-domains/libs/rmnlib-dev/linux24-x86-64/lib/Linux_x86-64_pgi11xx
 
 %.o : %.c
 	USE_PIC=yes $(CC) -c -g  $< -o $@
