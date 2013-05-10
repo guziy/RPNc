@@ -14,15 +14,15 @@ OBJ = $(patsubst %.c, %.o, $(notdir $(SOURCES_C))) \
 
 all : $(OBJ)
 	@echo $(OBJ)
-	USE_PIC=yes $(FC) -shared $(OBJ) -o rmnlib.so \
-                          -lrmnshared_013 \
-                          -Wl,-rpath,/sb/home/winger/ssm-domains/libs/rmnlib-dev/linux24-x86-64/lib/Linux_x86-64_pgi11xx
+	$(FC) -shared $(OBJ) -o rmnlib.so -lrmnshared_013
+	
 
 %.o : %.c
-	USE_PIC=yes $(CC) -c -g  $< -o $@
+	$(CC) -c -g $< -o $@
 
 %.o : %.f
-	USE_PIC=yes $(FC) -c -g $< -o $@
+	$(FC) -c -g $< -o $@
+	#gfortran -fPIC -c -g $< -o $@
 
 
 
