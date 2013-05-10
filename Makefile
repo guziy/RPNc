@@ -1,26 +1,34 @@
 
+
+
+FC = pgf90
+CC = pgcc 
+
+
 BASE_INC_PATH = $(ARMNLIB)/include
-
-
-CXX = pgCC
 LIB = -L$(ARMNLIB)/lib/Linux_x86-64_pgi904 -L$(ARMNLIB)/lib
 INCLUDE = -I$(BASE_INC_PATH) -I$(BASE_INC_PATH)/Linux_x86-64_pgi904
-FC=pgf90
 
-all : *.o
-	$(FC) -c -fPIC *.f
-	$(CXX) -shared *.o -o rmnlib.so $(LIB) -lrmn -lstd -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
-
-SOURCES = $(*.cpp)
-OBJ = $(patsubst %.cpp, %.o, $(notdir $(SOURCES)))
-
+SOURCES_C = $(wildcard *.c) 
+SOURCES_F = $(wildcard *.f)
+OBJ = $(patsubst %.c, %.o, $(notdir $(SOURCES_C))) \
+      $(patsubst %.f, %.o, $(notdir $(SOURCES_F))) 
+	
 
 all : $(OBJ)
-	$(CXX) -shared $(OBJ) -o rmnlib.so $(LIB) -lrmn -lstd -lc -lpgc -lpgf90 -lpgf90_rpm1 -lpgf902 -lnetcdf_c++ -lnetcdf -pgf90libs
+	@echo $(OBJ)
+	$(FC) -shared $(OBJ) -o rmnlib.so -lrmn_beta013 $(LIB)
+	
 
-%.o : %.cpp
-	$(CXX) -c -g -fPIC $< -o $@ $(INCLUDE)
+%.o : %.c
+	$(CC) -g -c $< -o $@ $(INCLUDE) -fPIC
+
+%.o : %.f
+	$(FC) -g -c  $< -o $@ $(INCLUDE) -fPIC
+	#gfortran -fPIC -c -g $< -o $@
+
+
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ)
 	rm -f *.so
